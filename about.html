@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rahul Dedhia</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="./assets/rahul_dedhia.jpg"
+      sizes="16x16"
+      type="image/jpg"
+    />
+
+    <!-- stylesheet linking -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap stylesheet linking -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- google font styles for Roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Include Jquery  used for navigation, footer & by bootstrap library -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Required for Bootstrap library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <!-- Bootstrap JS library   -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function() {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+
+    <!-- Heading -->
+    <article class="container">
+      <section class="row">
+        <div class="col-sm-12 text-center mt-3"><h4>About Me</h4></div>
+      </section>
+
+      <!-- Profile Picture -->
+      <section class="row">
+        <div class="col-sm-12 text-center">
+          <img
+            src="assets/rahul_dedhia.jpg"
+            class="img-fluid rounded my-2"
+            alt="Profile Picture"
+          />
+        </div>
+      </section>
+
+      <!-- LinkedIn link -->
+      <section class="row">
+        <div class="col-sm-12 text-center mt-2">
+          <h4>
+            <a href="http://www.linkedin.com/in/rahuldedhia" target="_blank"
+              >LinkedIn</a
+            >
+          </h4>
+        </div>
+      </section>
+
+      <!-- Email Link -->
+      <section class="row">
+        <div class="col-sm-12 text-center mt-2">
+          <h4>
+            <a href="mailto:rahul.dedhia@gmail.com">Email</a>
+          </h4>
+        </div>
+      </section>
+
+      <!-- Education listing-->
+      <section class="row">
+        <div class="col-sm-12 text-left">
+          <h5>Education:</h5>
+          <ul>
+            <li>MBA, University of Kansas</li>
+            <li>
+              BE, Electronics Engineering, Mumbai University (Awarded
+              Distinction in sate of Maharashtra)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Certificates listing -->
+      <section class="row">
+        <div class="col-sm-12 text-left my-2">
+          <h5>Certifications:</h5>
+          <ul>
+            <li>Six Sigma Green Belt since 2003</li>
+            <li>Project Management Professional (PMP) since 2008</li>
+            <li>SAFe Agilist since 2019</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+
+    <!--Footer bar-->
+    <div id="footer-placeholder"></div>
+    <script>
+      $(function() {
+        $("#footer-placeholder").load("footer.html");
+      });
+    </script>
+    <!--end of Footer bar-->
+  </body>
+</html>
